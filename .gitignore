@@ -1,0 +1,4 @@
+instruct_list,txt
+*.pyc
+*.pdf
+*~
