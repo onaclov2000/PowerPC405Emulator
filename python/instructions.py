@@ -411,9 +411,12 @@ def wrtee():
    print "Not Implemented"
 def wrteei():
    print "Not Implemented"
-def xpor():
-   print "Not Implemented"
-def xpori():
+def xor(params):
+   rA = params[0]
+   rS = registers.gp[params[1]]
+   rB = registers.gp[params[2]]
+   registers.gp[rA] = int(rS) ^ int(rB)
+def pxori():
    print "Not Implemented"
 def xporis():
    print "Not Implemented"

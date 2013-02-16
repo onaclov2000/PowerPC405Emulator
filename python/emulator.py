@@ -13,6 +13,7 @@ while(1):
       else:
          router.instruction[command[0]]()
       memory.SRAM[controller.pc] = var
+      controller.pc = controller.pc + 1
       print "===================================================================="
       print "Registers"
       print registers.gp  
