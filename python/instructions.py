@@ -53,8 +53,11 @@ def addzeo(rD,rA):
    print "Not Implemented"
 def addzeodot(rD,rA):
    print "Not Implemented"
-def pand(rA,rS,rB):
-   print "Not Implemented"
+def pand(params):
+   rA = params[0]
+   rS = registers.gp[params[1]]
+   rB = registers.gp[params[2]]
+   registers.gp[rA] = int(rS) & int(rB)
 def panddot(rA,rS,rB):
    print "Not Implemented"
 def pandc(rA,rS,rB):
