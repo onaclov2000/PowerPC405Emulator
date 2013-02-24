@@ -355,7 +355,10 @@ def stbux():
 def stbx():
    print "Not Implemented"
 def sth():
-   print "Not Implemented"
+   rS = params[0]
+   base = params[1].split("(")
+   EA =  int(base[0]) + int(registers.gp[base[1].split(")")[0]])
+   memory.SRAM[EA] = registers.gp[rS]
 def sthbrx():
    print "Not Implemented"
 def sthu():
@@ -371,7 +374,10 @@ def stswi():
 def stswx():
    print "Not Implemented"
 def stw():
-   print "Not Implemented"
+   rS = params[0]
+   base = params[1].split("(")
+   EA =  int(base[0]) + int(registers.gp[base[1].split(")")[0]])
+   memory.SRAM[EA] = registers.gp[rS]
 def stwbrx():
    print "Not Implemented"
 def stwcxdot():
